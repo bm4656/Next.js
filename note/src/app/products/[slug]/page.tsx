@@ -1,6 +1,8 @@
 import { getProduct, getProducts } from '@/app/service/products';
 import { notFound } from 'next/navigation';
 
+export const revalidate = 3;
+
 type Props = {
   params: {
     slug: string;
